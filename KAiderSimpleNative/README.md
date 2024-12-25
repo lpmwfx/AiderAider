@@ -2,14 +2,27 @@
 
 En simpel native Kotlin wrapper til Aider CLI værktøjet.
 
-## Installation
+## Forudsætninger
 
-1. Installer Aider:
+1. Installer Aider først:
 ```bash
 pip install aider-chat
 ```
 
-2. Installer Kotlin Native:
+2. Sæt dine API nøgler som miljøvariabler (IKKE i koden):
+```bash
+export OPENAI_API_KEY="din-api-nøgle"
+# eller tilføj til ~/.zshrc / ~/.bashrc
+```
+
+3. Test at Aider virker:
+```bash
+aider --version
+```
+
+## Installation
+
+1. Installer Kotlin Native:
 ```bash
 brew install kotlin-native
 ```
@@ -37,6 +50,8 @@ Efter installation kan du køre programmet direkte med:
 kaider
 ```
 
+Bemærk: Programmet bruger de samme miljøvariabler som Aider, så dine API nøgler skal være sat korrekt i dit miljø.
+
 ## Features
 
 - Ægte native LLVM-kompileret eksekverbar fil
@@ -55,5 +70,6 @@ kaider
 ## Afhængigheder
 
 - Kotlin Native (LLVM baseret)
-- Aider CLI tool
-- Python 3.x 
+- Aider CLI tool (skal være installeret og virke)
+- Python 3.x
+- Korrekt opsatte miljøvariabler for API nøgler 
