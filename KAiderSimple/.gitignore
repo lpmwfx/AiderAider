@@ -1,0 +1,14 @@
+# Aider filer
+aider-chat.log
+.aider*
+
+# Kotlin
+*.class
+*.jar
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+*.iml 
