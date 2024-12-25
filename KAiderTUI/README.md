@@ -32,4 +32,10 @@ chmod +x KAider.kts
 - Bruger kun standard Kotlin
 - ANSI escape codes til farver og cursor kontrol
 - `tput` til terminal dimensioner
-- Ingen eksterne dependencies 
+- Ingen eksterne dependencies
+
+## Opdateringer
+
+- Forberedt til ny TUI implementering
+- Klar til at integrere KAiderSimple i den store kolonne
+- Filtræ i den smalle kolonne 
