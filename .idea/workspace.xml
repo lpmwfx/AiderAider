@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="83273611-7f21-4f56-b924-c64ee178ec24" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KAiderTUI/KAider.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/KAiderTUI/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
