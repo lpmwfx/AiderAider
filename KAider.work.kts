@@ -1,13 +1,4 @@
-#!/usr/bin/env kotlin
-
-@file:DependsOn("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-@file:DependsOn("com.github.ajalt.mordant:mordant:2.2.0")
-
-import kotlinx.coroutines.*
-import kotlin.io.path.*
-import com.github.ajalt.mordant.terminal.*
-import com.github.ajalt.mordant.rendering.*
-import com.github.ajalt.mordant.widgets.*
+// Dette er en arbejdsfil med vores tidligere kode og ideer
 
 // Original file handling
 class FileHandler {
@@ -89,7 +80,23 @@ class AiderProcess {
     }
 }
 
-fun main() {
-    println("KAider v1.0 - Velkommen!")
-    // TODO: Implementer hovedlogik
-} 
+/* UI mockup fra tidligere:
+┌─ KAider v1.0 ────────────────────────────────────────────┐
+│                                                          │
+│ Files          Chat                      Preview         │
+│ ├─ src/        > Hvordan kan jeg hjælpe? #!/usr/bin/env │
+│ ├─ KAider.kt   /add KAi                  kotlin         │
+│ └─ chat.log    [Matches:]                               │
+│                KAider.main.kts                          │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+AiderAider>                                        ?:help
+*/
+
+// TODO: Features vi vil implementere:
+// 1. Fil completion med @ og TAB
+// 2. Kommando completion med /
+// 3. Preview af valgte filer
+// 4. Aider integration
+// 5. Chat historik
+// 6. Status bar med aktiv fil 
