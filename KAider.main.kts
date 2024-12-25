@@ -1,13 +1,9 @@
 #!/usr/bin/env kotlin
 
 @file:DependsOn("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-@file:DependsOn("com.github.ajalt.mordant:mordant:2.2.0")
 
 import kotlinx.coroutines.*
 import kotlin.io.path.*
-import com.github.ajalt.mordant.terminal.*
-import com.github.ajalt.mordant.rendering.*
-import com.github.ajalt.mordant.widgets.*
 
 // Original file handling
 class FileHandler {
@@ -91,5 +87,21 @@ class AiderProcess {
 
 fun main() {
     println("KAider v1.0 - Velkommen!")
-    // TODO: Implementer hovedlogik
+    val fileHandler = FileHandler()
+    val commandHandler = CommandHandler()
+    val aiderProcess = AiderProcess()
+    
+    try {
+        while (true) {
+            print("KAider> ")
+            val input = readLine() ?: break
+            
+            if (input == "exit") break
+            
+            commandHandler.handleCommand(input)
+            aiderProcess.sendCommand(input)
+        }
+    } finally {
+        aiderProcess.cleanup()
+    }
 } 
